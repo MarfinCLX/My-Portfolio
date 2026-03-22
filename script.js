@@ -1,3 +1,8 @@
+function playShot(number) {
+    const sound = document.getElementById("audio" + number)
+   sound.currentTime = 0;
+    sound.play();
+}
 const targetDate = new Date ("July,31,2027, 00:00:00").getTime();
 
 const countdownElement = document.getElementById("countdown");
